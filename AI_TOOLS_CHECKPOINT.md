@@ -2,7 +2,7 @@
 
 Status: `OWNER_ACTION_REQUIRED_META_AI_LOGIN_FIRST`
 
-Updated: `2026-07-26T07:45:36.2264932+02:00`
+Updated: `2026-07-26T10:25:33.1748797+02:00`
 
 ## Objective
 
@@ -60,6 +60,27 @@ unattended system-level backdoors.
 All owner-independent installation, provenance, doctor, safe launcher,
 security-baseline, and local acceptance work is complete. The first provider
 in the required order is paused at Meta account sign-in.
+
+## Resume verification (2026-07-26 10:25 CEST)
+
+- Re-read the canonical checkpoint before acting and confirmed the repository
+  working tree was clean.
+- Verified local `main`, `origin/main`, and the remote `main` ref all pointed
+  to `64771769b479c762c5908472c1cb6635d8adaaaf` before this checkpoint update.
+- Re-verified the source masterprompt SHA-256 as
+  `937bf6115b1497f9ee7ecf89b5d48d0647e017ca40a26e895485024dcb7f1113`.
+- Live command readback remained unchanged for GitHub CLI `2.96.0`, Copilot
+  CLI `1.0.75`, Grok Build `0.2.112`, Claude Code `2.1.220`, Mistral Vibe
+  `2.22.0`, and Gemini CLI `0.52.0`; Comet remains installed as
+  `150.0.7871.230`.
+- GitHub identity remains `Tarasevych` with credentials in the Windows
+  keyring. Claude Code reports `loggedIn: false`.
+- Defender antivirus, real-time protection, behavior monitoring, IOAV
+  protection, and all firewall profiles remain enabled. UAC `EnableLUA=0`
+  and BitLocker `C:` protection off remain pre-existing, unchanged states.
+- The Windows Computer Use runtime was unavailable, and the policy-controlled
+  fallback did not execute the Meta shortcut. No browser, credential,
+  security-policy, service, task, or provider state was changed.
 
 ## Next safe action
 
