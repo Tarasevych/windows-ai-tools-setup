@@ -1,0 +1,27 @@
+# Secrets and credentials
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+*credentials*
+*token*
+*secret*
+
+# Runtime and package artifacts
+logs/*
+!logs/README.md
+setup/tests/*/
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+dist/
+build/
+
+# Editor and OS noise
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-07-26T07:16:28.9915898+02:00",
+  "policy": {
+    "official_sources_only": true,
+    "secret_free_artifacts": true,
+    "new_spend_eur": 0,
+    "persistent_system_or_trustedinstaller_agent": false,
+    "security_controls_disabled_by_this_task": false,
+    "unconditional_destructive_auto_approve": false
+  },
+  "tools": [
+    {
+      "id": "github-cli",
+      "component": "GitHub CLI",
+      "version": "2.96.0",
+      "source": "WinGet GitHub.cli / GitHub, Inc.",
+      "installed": true,
+      "auth": "PASS_TARASEVYCH_WINDOWS_KEYRING",
+      "status": "READY"
+    },
+    {
+      "id": "meta-ai",
+      "component": "Consumer web app and developer capability review",
+      "version": null,
+      "source": "Meta official sources",
+      "installed": false,
+      "auth": "NOT_ATTEMPTED",
+      "status": "OFFICIAL_RESEARCH_IN_PROGRESS"
+    },
+    {
+      "id": "xai-grok-build",
+      "component": "Grok Build CLI",
+      "version": null,
+      "source": "xAI official sources",
+      "installed": false,
+      "auth": "NOT_ATTEMPTED",
+      "status": "OFFICIAL_RESEARCH_IN_PROGRESS"
+    },
+    {
+      "id": "github-copilot-cli",
+      "component": "GitHub Copilot CLI",
+      "version": null,
+      "available_version": "1.0.75",
+      "source": "WinGet GitHub.Copilot / GitHub, Inc.",
+      "installed": false,
+      "auth": "NOT_ATTEMPTED",
+      "status": "READY_FOR_VERIFIED_INSTALL"
+    },
+    {
+      "id": "claude",
+      "component": "Claude Desktop",
+      "version": "1.24012.1.0",
+      "source": "WinGet Anthropic.Claude / Anthropic, PBC",
+      "installed": true,
+      "auth": "UNVERIFIED_DESKTOP",
+      "status": "INSTALLED_PENDING_ACCEPTANCE"
+    },
+    {
+      "id": "claude-code",
+      "component": "Claude Code",
+      "version": "2.1.217",
+      "available_version": "2.1.218",
+      "source": "Anthropic native executable; WinGet manifest available",
+      "installed": true,
+      "auth": "NOT_AUTHENTICATED",
+      "status": "UPDATE_AVAILABLE_PENDING_OFFICIAL_REVIEW"
+    },
+    {
+      "id": "mistral-vibe",
+      "component": "Mistral Vibe CLI",
+      "version": null,
+      "source": "Mistral official sources",
+      "installed": false,
+      "auth": "NOT_ATTEMPTED",
+      "status": "OFFICIAL_RESEARCH_IN_PROGRESS"
+    },
+    {
+      "id": "gemini-cli",
+      "component": "Gemini CLI",
+      "version": null,
+      "available_version": "0.52.0",
+      "source": "Google official npm @google/gemini-cli",
+      "installed": false,
+      "auth": "NOT_ATTEMPTED",
+      "status": "AUTH_OR_API_ACCESS_RESTRICTION_UNDER_REVIEW"
+    },
+    {
+      "id": "deepseek",
+      "component": "DeepSeek web/API integration",
+      "version": null,
+      "source": "DeepSeek official sources",
+      "installed": false,
+      "auth": "NOT_ATTEMPTED",
+      "status": "NO_OFFICIAL_WINDOWS_CLI_API_PAYMENT_GATE"
+    },
+    {
+      "id": "perplexity",
+      "component": "Comet and Perplexity MCP review",
+      "version": null,
+      "source": "Perplexity official sources",
+      "installed": false,
+      "auth": "NOT_ATTEMPTED",
+      "status": "WINDOWS_CLIENT_OR_API_PAYMENT_GATE_UNDER_REVIEW"
+    }
+  ]
+}

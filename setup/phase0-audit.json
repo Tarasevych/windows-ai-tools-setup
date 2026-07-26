@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0.0",
+  "captured_at": "2026-07-26T07:16:28.9915898+02:00",
+  "source_prompt": {
+    "path": "C:\\Users\\t\\Documents\\Codex\\AI_TOOL\\PROMPT_WINDOWS_AI_TOOLS_FULL_ACCESS_SETUP_UK.md",
+    "sha256": "937bf6115b1497f9ee7ecf89b5d48d0647e017ca40a26e895485024dcb7f1113"
+  },
+  "windows": {
+    "edition": "Microsoft Windows 11 Pro",
+    "version": "10.0.26200",
+    "build": "26200",
+    "architecture": "x64",
+    "current_identity": "T\\t",
+    "current_process_elevated": true,
+    "system_drive_free_gib": 504.01
+  },
+  "dependencies": {
+    "winget": "1.29.280",
+    "windows_terminal": "1.24.11911.0",
+    "powershell": "7.6.4",
+    "windows_powershell": "5.1.26100.8875",
+    "git": "2.55.0.windows.2",
+    "github_cli": "2.96.0",
+    "node": "24.18.0",
+    "npm": "11.16.0",
+    "python": "3.13.14",
+    "uv": "0.11.28",
+    "wsl": "2.7.10.0",
+    "wsl_default_distribution": "Ubuntu-24.04",
+    "wsl_default_version": 2,
+    "visual_studio_code": "1.126.0",
+    "chrome": "150.0.7871.182"
+  },
+  "provider_tools_before_setup": {
+    "grok": null,
+    "github_copilot_cli": null,
+    "claude_desktop": "1.24012.1.0",
+    "claude_code": "2.1.217",
+    "mistral_vibe": null,
+    "gemini_cli": null,
+    "deepseek_cli": null,
+    "perplexity_cli": null
+  },
+  "authentication": {
+    "github_cli": {
+      "status": "PASS",
+      "account": "Tarasevych",
+      "storage": "Windows keyring",
+      "protocol": "https"
+    },
+    "claude_code": {
+      "status": "NOT_AUTHENTICATED",
+      "method": "none",
+      "provider": "firstParty"
+    }
+  },
+  "security_baseline_before_ai_tool_mutations": {
+    "defender_antivirus_enabled": true,
+    "defender_realtime_protection_enabled": true,
+    "defender_signatures_current": true,
+    "firewall_domain_enabled": true,
+    "firewall_private_enabled": true,
+    "firewall_public_enabled": true,
+    "uac_enable_lua": 0,
+    "uac_note": "UAC was already disabled before this setup; this task did not change it.",
+    "bitlocker_c_encryption_percentage": 100,
+    "bitlocker_c_protection": "OFF_AT_BASELINE",
+    "bitlocker_e_encryption_percentage": 0,
+    "execution_policy_current_user": "RemoteSigned"
+  },
+  "environment_review": {
+    "provider_secret_variable_values_read": false,
+    "provider_secret_variable_values_recorded": false,
+    "provider_specific_secret_variable_names_present": [],
+    "codex_runtime_variable_names_present": [
+      "CODEX_CI",
+      "CODEX_CLI_PATH",
+      "CODEX_HOME",
+      "CODEX_INTERNAL_ORIGINATOR_OVERRIDE",
+      "CODEX_PERMISSION_PROFILE",
+      "CODEX_SHELL",
+      "CODEX_THREAD_ID"
+    ]
+  },
+  "phase0_status": "PASS_WITH_EXISTING_SECURITY_BASELINE_WARNINGS"
+}
