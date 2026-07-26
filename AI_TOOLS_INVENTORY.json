@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-26T07:16:28.9915898+02:00",
+  "updated_at": "2026-07-26T07:42:27.3906751+02:00",
   "policy": {
     "official_sources_only": true,
     "secret_free_artifacts": true,
@@ -21,31 +21,37 @@
     },
     {
       "id": "meta-ai",
-      "component": "Consumer web app and developer capability review",
+      "component": "Consumer Chrome app-mode shortcut",
       "version": null,
       "source": "Meta official sources",
-      "installed": false,
-      "auth": "NOT_ATTEMPTED",
-      "status": "OFFICIAL_RESEARCH_IN_PROGRESS"
+      "installed": true,
+      "auth": "OWNER_LOGIN_REQUIRED",
+      "permission_mode": "BROWSER_ONLY_NO_WINDOWS_TOOLS",
+      "status": "WEB_SHORTCUT_READY_MODEL_API_BLOCKED_US_ONLY_PREVIEW"
     },
     {
       "id": "xai-grok-build",
       "component": "Grok Build CLI",
-      "version": null,
-      "source": "xAI official sources",
-      "installed": false,
-      "auth": "NOT_ATTEMPTED",
-      "status": "OFFICIAL_RESEARCH_IN_PROGRESS"
+      "version": "0.2.112",
+      "source": "xAI official npm @xai-official/grok",
+      "installed": true,
+      "auth": "OWNER_DEVICE_OR_BROWSER_LOGIN_REQUIRED",
+      "package_integrity": "sha512-dCXAiFHmn3JTOK+vPfCIzzum1GmxPB81NH73yYhqleXx1y/Ks3qjwJ+GeEXmB7eudiap98j9Nj1cDwH4lSuaOw==",
+      "permission_mode": "DEFAULT_ASK_NOT_PERSISTENT_BYPASS",
+      "status": "INSTALLED_DOCTOR_PASS_AUTH_REQUIRED"
     },
     {
       "id": "github-copilot-cli",
       "component": "GitHub Copilot CLI",
-      "version": null,
-      "available_version": "1.0.75",
+      "version": "1.0.75",
       "source": "WinGet GitHub.Copilot / GitHub, Inc.",
-      "installed": false,
-      "auth": "NOT_ATTEMPTED",
-      "status": "READY_FOR_VERIFIED_INSTALL"
+      "installed": true,
+      "auth": "PASS_USING_GH_TARASEVYCH",
+      "sha256": "0f6ce49caf19066374df34d1b9aa790a19dc32b70ab76780662adf4647b5de5e",
+      "signature": "VALID_GITHUB_INC",
+      "permission_mode": "DEFAULT_PROMPTS_NO_PERSISTED_ALLOW_ALL",
+      "acceptance": "PASS_AUTH_AND_ISOLATED_FILE_READ_WRITE",
+      "status": "READY"
     },
     {
       "id": "claude",
@@ -53,55 +59,66 @@
       "version": "1.24012.1.0",
       "source": "WinGet Anthropic.Claude / Anthropic, PBC",
       "installed": true,
-      "auth": "UNVERIFIED_DESKTOP",
-      "status": "INSTALLED_PENDING_ACCEPTANCE"
+      "auth": "OWNER_LOGIN_REQUIRED",
+      "permission_mode": "DESKTOP_PRODUCT_BOUNDARY",
+      "status": "INSTALLED_CURRENT_PENDING_OWNER_LOGIN"
     },
     {
       "id": "claude-code",
       "component": "Claude Code",
-      "version": "2.1.217",
-      "available_version": "2.1.218",
-      "source": "Anthropic native executable; WinGet manifest available",
+      "version": "2.1.220",
+      "source": "Anthropic native updater",
       "installed": true,
       "auth": "NOT_AUTHENTICATED",
-      "status": "UPDATE_AVAILABLE_PENDING_OFFICIAL_REVIEW"
+      "sha256": "af5bf1f1b2aadffc768eccd787084c6fdf9ba81624cbe96c1c6d9ac1a1550231",
+      "signature": "VALID_ANTHROPIC_PBC",
+      "permission_mode": "DEFAULT_MANUAL_NOT_BYPASS",
+      "doctor": "PASS_NO_INSTALLATION_ISSUES",
+      "status": "INSTALLED_CURRENT_AUTH_REQUIRED"
     },
     {
       "id": "mistral-vibe",
       "component": "Mistral Vibe CLI",
-      "version": null,
-      "source": "Mistral official sources",
-      "installed": false,
-      "auth": "NOT_ATTEMPTED",
-      "status": "OFFICIAL_RESEARCH_IN_PROGRESS"
+      "version": "2.22.0",
+      "source": "Official Mistral package via uv tool install",
+      "installed": true,
+      "auth": "OWNER_BROWSER_OR_API_SETUP_REQUIRED",
+      "sha256_uv_shim": "79dae80b3982d28ab9538fcfedbdbdd9078d1e1cb2c6f04a469dc4dd7bf5d33d",
+      "permission_mode": "DEFAULT_AGENT_NOT_AUTO_APPROVE",
+      "status": "INSTALLED_AUTH_REQUIRED"
     },
     {
       "id": "gemini-cli",
-      "component": "Gemini CLI",
-      "version": null,
-      "available_version": "0.52.0",
+      "component": "Gemini CLI and consumer Chrome app-mode shortcut",
+      "version": "0.52.0",
       "source": "Google official npm @google/gemini-cli",
-      "installed": false,
-      "auth": "NOT_ATTEMPTED",
-      "status": "AUTH_OR_API_ACCESS_RESTRICTION_UNDER_REVIEW"
+      "installed": true,
+      "auth": "ENTERPRISE_CODE_ASSIST_OR_API_KEY_REQUIRED",
+      "package_integrity": "sha512-/6FvfvlcsOJtn3NAgTp5/ca9xS6nmat4otQ+NEVoT6lovmI2N5jHxtBqGtjLUo+cvBfGgtR2WmkCPxxpHjr61Q==",
+      "permission_mode": "DEFAULT_APPROVAL_NO_YOLO",
+      "status": "CLI_AND_WEB_SHORTCUT_READY_PROVIDER_ACCESS_GATE"
     },
     {
       "id": "deepseek",
-      "component": "DeepSeek web/API integration",
+      "component": "DeepSeek consumer Chrome app-mode shortcut",
       "version": null,
       "source": "DeepSeek official sources",
-      "installed": false,
-      "auth": "NOT_ATTEMPTED",
-      "status": "NO_OFFICIAL_WINDOWS_CLI_API_PAYMENT_GATE"
+      "installed": true,
+      "auth": "OWNER_WEB_LOGIN_OPTIONAL_API_KEY_NOT_CONFIGURED",
+      "permission_mode": "BROWSER_ONLY_NO_FIRST_PARTY_WINDOWS_CLI",
+      "status": "WEB_SHORTCUT_READY_API_PAYMENT_GATE"
     },
     {
       "id": "perplexity",
-      "component": "Comet and Perplexity MCP review",
-      "version": null,
-      "source": "Perplexity official sources",
-      "installed": false,
-      "auth": "NOT_ATTEMPTED",
-      "status": "WINDOWS_CLIENT_OR_API_PAYMENT_GATE_UNDER_REVIEW"
+      "component": "Perplexity Comet",
+      "version": "150.0.7871.230",
+      "source": "WinGet Perplexity.Comet / perplexity.ai endpoint",
+      "installed": true,
+      "auth": "OWNER_LOGIN_REQUIRED",
+      "sha256": "041225a991671929d07b13d12f17d23efc7b8448cc39718a1cedde017955d565",
+      "signature": "VALID_PERPLEXITY_AI_INC",
+      "permission_mode": "BROWSER_ASSISTANT_ONLY_NOT_WINDOWS_CONTROL",
+      "status": "COMET_READY_MCP_NOT_CONFIGURED_API_PAYMENT_GATE"
     }
   ]
 }

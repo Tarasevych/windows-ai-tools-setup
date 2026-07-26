@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0.0",
+  "captured_at": "2026-07-26T07:42:27.3906751+02:00",
+  "new_spend_eur": 0,
+  "security_controls_changed": false,
+  "persistent_permission_bypass_written": false,
+  "installed_or_verified": [
+    {
+      "id": "GitHub.cli",
+      "version": "2.96.0",
+      "publisher": "GitHub, Inc.",
+      "path": "C:\\Program Files\\GitHub CLI\\gh.exe",
+      "sha256": "cd79f16203f1fbe56937c4c96e2b6eadd10549418dcb241d91576ac77af0ac8b",
+      "signature": "Valid",
+      "auth": "Tarasevych via Windows keyring",
+      "action": "reused; not reinstalled"
+    },
+    {
+      "id": "GitHub.Copilot",
+      "version": "1.0.75",
+      "publisher": "GitHub, Inc.",
+      "installer_sha256_from_winget": "18a8d469d30930cb9da5625dfaf3e261f0cd25442bfdb6754382c443bed42643",
+      "executable_sha256": "0f6ce49caf19066374df34d1b9aa790a19dc32b70ab76780662adf4647b5de5e",
+      "signature": "Valid",
+      "auth": "PASS using existing gh identity",
+      "acceptance": "PASS isolated no-shell file read/write"
+    },
+    {
+      "id": "@xai-official/grok",
+      "version": "0.2.112",
+      "publisher": "xAI official npm scope",
+      "integrity": "sha512-dCXAiFHmn3JTOK+vPfCIzzum1GmxPB81NH73yYhqleXx1y/Ks3qjwJ+GeEXmB7eudiap98j9Nj1cDwH4lSuaOw==",
+      "wrapper_sha256": "3dabc4054cf146d102c571ccb3ea90c86189c8cfd3fc9481637ce88ff416a8b4",
+      "doctor": "PASS_WITH_TERMINAL_COLOR_RECOMMENDATION",
+      "auth": "NOT_AUTHENTICATED"
+    },
+    {
+      "id": "Anthropic.Claude",
+      "version": "1.24012.1.0",
+      "publisher": "Anthropic, PBC",
+      "action": "existing current WinGet installation reused",
+      "auth": "OWNER_LOGIN_REQUIRED"
+    },
+    {
+      "id": "Anthropic.ClaudeCode",
+      "version_before": "2.1.217",
+      "version_after": "2.1.220",
+      "publisher": "Anthropic PBC",
+      "path": "C:\\Users\\t\\.local\\bin\\claude.exe",
+      "sha256": "af5bf1f1b2aadffc768eccd787084c6fdf9ba81624cbe96c1c6d9ac1a1550231",
+      "signature": "Valid",
+      "doctor": "PASS_NO_INSTALLATION_ISSUES",
+      "auth": "NOT_AUTHENTICATED"
+    },
+    {
+      "id": "mistral-vibe",
+      "version": "2.22.0",
+      "publisher": "Mistral official package via uv/PyPI",
+      "path": "C:\\Users\\t\\.local\\bin\\vibe.exe",
+      "uv_shim_sha256": "79dae80b3982d28ab9538fcfedbdbdd9078d1e1cb2c6f04a469dc4dd7bf5d33d",
+      "auth": "NOT_CONFIGURED"
+    },
+    {
+      "id": "@google/gemini-cli",
+      "version": "0.52.0",
+      "publisher": "Google official npm scope",
+      "repository": "https://github.com/google-gemini/gemini-cli",
+      "node_requirement": ">=20",
+      "integrity": "sha512-/6FvfvlcsOJtn3NAgTp5/ca9xS6nmat4otQ+NEVoT6lovmI2N5jHxtBqGtjLUo+cvBfGgtR2WmkCPxxpHjr61Q==",
+      "wrapper_sha256": "4af406a78afad63f4c20b9bb18f386b2daf59040941474ea02b91942e995e7a3",
+      "keytar_load": "PASS",
+      "auth": "ENTERPRISE_CODE_ASSIST_OR_API_KEY_REQUIRED"
+    },
+    {
+      "id": "Perplexity.Comet",
+      "version": "150.0.7871.230",
+      "publisher": "PERPLEXITY AI, INC.",
+      "installer_url_host": "www.perplexity.ai",
+      "installer_sha256_from_winget": "ba2df26d8238823671debf2eec8d155603b213ac2cc7d000523e2e2e8950e5ce",
+      "executable_sha256": "041225a991671929d07b13d12f17d23efc7b8448cc39718a1cedde017955d565",
+      "signature": "Valid",
+      "auth": "OWNER_LOGIN_REQUIRED"
+    }
+  ],
+  "web_shortcuts": [
+    {
+      "name": "Meta AI",
+      "url": "https://www.meta.ai/",
+      "mode": "signed Google Chrome app shortcut",
+      "start_menu_readback": "PASS"
+    },
+    {
+      "name": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "mode": "signed Google Chrome app shortcut",
+      "start_menu_readback": "PASS"
+    },
+    {
+      "name": "DeepSeek",
+      "url": "https://chat.deepseek.com/",
+      "mode": "signed Google Chrome app shortcut",
+      "start_menu_readback": "PASS"
+    }
+  ],
+  "post_install": {
+    "defender_antivirus": "ENABLED_UNCHANGED",
+    "defender_realtime": "ENABLED_UNCHANGED",
+    "firewall_profiles": "ALL_ENABLED_UNCHANGED",
+    "uac": "PRE_EXISTING_DISABLED_UNCHANGED",
+    "bitlocker_c": "PRE_EXISTING_PROTECTION_OFF_UNCHANGED",
+    "task_owned_installer_or_provider_processes": 0,
+    "secrets_recorded": false
+  }
+}
