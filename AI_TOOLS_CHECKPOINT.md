@@ -2,7 +2,7 @@
 
 Status: `PHASE_0_COMPLETE_OFFICIAL_RESEARCH_RUNNING`
 
-Updated: `2026-07-26T07:16:28.9915898+02:00`
+Updated: `2026-07-26T07:20:27.8398417+02:00`
 
 ## Objective
 
@@ -27,6 +27,10 @@ unattended system-level backdoors.
 - Defender real-time protection and all firewall profiles are enabled.
   UAC was already disabled before this task. BitLocker `C:` was encrypted but
   protection was already off. No security baseline setting has been changed.
+- The secret-free baseline is committed as
+  `0e2c7e4517a508f14e29d1a7e40768947f6f8feb` and pushed with exact SHA parity
+  to private repository
+  `https://github.com/Tarasevych/windows-ai-tools-setup`.
 
 ## Current action
 
@@ -36,9 +40,9 @@ installation.
 
 ## Next safe action
 
-Initialize and preserve this directory as a private Git repository, then
-install only missing official stable components whose package provenance and
-cost-free path have been verified. Do not repeat `gh` setup.
+Install only missing official stable components whose package provenance and
+cost-free path have been verified. Preserve exact versions and installer
+evidence; do not repeat `gh` setup.
 
 ## Owner-only gates
 
