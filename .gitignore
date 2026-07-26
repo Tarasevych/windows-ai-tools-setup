@@ -13,6 +13,8 @@
 logs/*
 !logs/README.md
 setup/tests/*/
+workspaces/*
+!workspaces/README.md
 node_modules/
 __pycache__/
 *.pyc

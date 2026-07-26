@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-07-26",
+  "enforcement": {
+    "launcher_consumes": [
+      "allowed_launch_roots",
+      "providers.<tool>.consumer_only",
+      "providers.<tool>.command_path",
+      "providers.<tool>.sha256",
+      "providers.<tool>.safe_args"
+    ],
+    "documentation_only": [
+      "local_agent_defaults",
+      "provider capability annotations outside safe_args"
+    ]
+  },
+  "allowed_launch_roots": [
+    "C:\\AI-Tools\\workspaces"
+  ],
+  "local_agent_defaults": {
+    "default_elevation": "standard_user",
+    "uac_required": true,
+    "elevated_agent_launch": false,
+    "approval_mode": "provider_default",
+    "trust_mode": "provider_prompt",
+    "sandbox": "provider_default",
+    "remote_control": false,
+    "mcp": "disabled_by_default",
+    "credential_mode": "official_browser_or_os_keyring",
+    "destructive_auto_approve": false
+  },
+  "providers": {
+    "copilot": {
+      "consumer_only": false,
+      "command_path": "{LOCALAPPDATA}\\Microsoft\\WinGet\\Links\\copilot.exe",
+      "sha256": "0f6ce49caf19066374df34d1b9aa790a19dc32b70ab76780662adf4647b5de5e",
+      "safe_args": [
+        "-C",
+        "{workspace}",
+        "--no-remote",
+        "--no-remote-export",
+        "--disallow-temp-dir",
+        "--no-bash-env",
+        "--no-custom-instructions"
+      ],
+      "remote_control": false,
+      "ambient_instructions": false,
+      "temporary_directory_access": false
+    },
+    "grok": {
+      "consumer_only": false,
+      "command_path": "{APPDATA}\\npm\\grok.cmd",
+      "sha256": "5d0c3b5fd7400bceded012be7d63a2a6ff34c715bbc162e288edf18c6709444d",
+      "safe_args": [
+        "--cwd",
+        "{workspace}",
+        "--permission-mode",
+        "default",
+        "--no-memory"
+      ],
+      "permission_mode": "default",
+      "memory": false
+    },
+    "claude": {
+      "consumer_only": false,
+      "command_path": "{USERPROFILE}\\.local\\bin\\claude.exe",
+      "sha256": "af5bf1f1b2aadffc768eccd787084c6fdf9ba81624cbe96c1c6d9ac1a1550231",
+      "safe_args": [
+        "--permission-mode",
+        "manual",
+        "--strict-mcp-config",
+        "--mcp-config",
+        "{empty_claude_mcp}"
+      ],
+      "permission_mode": "manual",
+      "ambient_mcp": false
+    },
+    "vibe": {
+      "consumer_only": false,
+      "command_path": "{USERPROFILE}\\.local\\bin\\vibe.exe",
+      "sha256": "79dae80b3982d28ab9538fcfedbdbdd9078d1e1cb2c6f04a469dc4dd7bf5d33d",
+      "safe_args": [
+        "--agent",
+        "default"
+      ],
+      "agent": "default",
+      "trust": "prompt"
+    },
+    "gemini": {
+      "consumer_only": false,
+      "command_path": "{APPDATA}\\npm\\gemini.cmd",
+      "sha256": "ed3d5b269acefc5dffb342df0a214b2351794244c520c124d3556bc5ea6064c5",
+      "safe_args": [
+        "--approval-mode",
+        "default"
+      ],
+      "approval_mode": "default",
+      "trust": "prompt"
+    },
+    "meta_ai": {
+      "consumer_only": true,
+      "local_windows_tools": false
+    },
+    "deepseek": {
+      "consumer_only": true,
+      "local_windows_tools": false
+    },
+    "perplexity_comet": {
+      "consumer_only": true,
+      "local_windows_tools": false
+    }
+  }
+}

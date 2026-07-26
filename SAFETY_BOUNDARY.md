@@ -32,6 +32,21 @@ would turn an AI client compromise or prompt-injection event into full
 machine compromise. Product-supported capability is recorded honestly; it is
 not equated with a safe default authorization.
 
+## Current launch gate
+
+The controlled launcher accepts only `C:\AI-Tools\workspaces` as its initial
+launch directory, retains provider approval and trust prompts, disables
+Copilot remote control and ambient Claude MCP, and refuses execution while UAC
+is disabled. This is not an OS filesystem sandbox; an approved shell tool can
+still address absolute paths. CLI entry points are pinned to reviewed paths
+and SHA-256 digests. The current machine baseline has UAC disabled and
+BitLocker `C:` protection off; neither state was created or changed by this
+project.
+
+An existing Claude setting suppresses the dangerous-mode warning prompt. It
+does not activate bypass mode by itself, is not modified here, and is recorded
+as a pre-existing risk.
+
 ## External gates
 
 OAuth, MFA, CAPTCHA, passkeys, biometric checks, API-key entry, Terms consent,

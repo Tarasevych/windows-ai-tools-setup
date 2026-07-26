@@ -1,13 +1,16 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-26T07:42:27.3906751+02:00",
+  "updated_at": "2026-07-26T11:11:05.4018156+02:00",
   "policy": {
     "official_sources_only": true,
     "secret_free_artifacts": true,
     "new_spend_eur": 0,
     "persistent_system_or_trustedinstaller_agent": false,
     "security_controls_disabled_by_this_task": false,
-    "unconditional_destructive_auto_approve": false
+    "unconditional_destructive_auto_approve": false,
+    "controlled_launch_root": "C:\\AI-Tools\\workspaces",
+    "local_agent_launch": "BLOCKED_UNTIL_UAC_ENABLED_AND_STANDARD_USER_SESSION",
+    "bitlocker_c_protection_warning": true
   },
   "tools": [
     {
@@ -37,7 +40,7 @@
       "installed": true,
       "auth": "OWNER_DEVICE_OR_BROWSER_LOGIN_REQUIRED",
       "package_integrity": "sha512-dCXAiFHmn3JTOK+vPfCIzzum1GmxPB81NH73yYhqleXx1y/Ks3qjwJ+GeEXmB7eudiap98j9Nj1cDwH4lSuaOw==",
-      "permission_mode": "DEFAULT_ASK_NOT_PERSISTENT_BYPASS",
+      "permission_mode": "CONTROLLED_LAUNCHER_DEFAULT_ASK_NO_MEMORY",
       "status": "INSTALLED_DOCTOR_PASS_AUTH_REQUIRED"
     },
     {
@@ -49,7 +52,7 @@
       "auth": "PASS_USING_GH_TARASEVYCH",
       "sha256": "0f6ce49caf19066374df34d1b9aa790a19dc32b70ab76780662adf4647b5de5e",
       "signature": "VALID_GITHUB_INC",
-      "permission_mode": "DEFAULT_PROMPTS_NO_PERSISTED_ALLOW_ALL",
+      "permission_mode": "CONTROLLED_LAUNCHER_DEFAULT_PROMPTS_NO_REMOTE_NO_ALLOW_ALL",
       "acceptance": "PASS_AUTH_AND_ISOLATED_FILE_READ_WRITE",
       "status": "READY"
     },
@@ -72,7 +75,8 @@
       "auth": "NOT_AUTHENTICATED",
       "sha256": "af5bf1f1b2aadffc768eccd787084c6fdf9ba81624cbe96c1c6d9ac1a1550231",
       "signature": "VALID_ANTHROPIC_PBC",
-      "permission_mode": "DEFAULT_MANUAL_NOT_BYPASS",
+      "permission_mode": "CONTROLLED_LAUNCHER_MANUAL_STRICT_EMPTY_MCP",
+      "preexisting_skip_dangerous_mode_permission_prompt": true,
       "doctor": "PASS_NO_INSTALLATION_ISSUES",
       "status": "INSTALLED_CURRENT_AUTH_REQUIRED"
     },
@@ -84,7 +88,7 @@
       "installed": true,
       "auth": "OWNER_BROWSER_OR_API_SETUP_REQUIRED",
       "sha256_uv_shim": "79dae80b3982d28ab9538fcfedbdbdd9078d1e1cb2c6f04a469dc4dd7bf5d33d",
-      "permission_mode": "DEFAULT_AGENT_NOT_AUTO_APPROVE",
+      "permission_mode": "CONTROLLED_LAUNCHER_DEFAULT_AGENT_TRUST_PROMPT",
       "status": "INSTALLED_AUTH_REQUIRED"
     },
     {
@@ -95,7 +99,7 @@
       "installed": true,
       "auth": "ENTERPRISE_CODE_ASSIST_OR_API_KEY_REQUIRED",
       "package_integrity": "sha512-/6FvfvlcsOJtn3NAgTp5/ca9xS6nmat4otQ+NEVoT6lovmI2N5jHxtBqGtjLUo+cvBfGgtR2WmkCPxxpHjr61Q==",
-      "permission_mode": "DEFAULT_APPROVAL_NO_YOLO",
+      "permission_mode": "CONTROLLED_LAUNCHER_DEFAULT_APPROVAL_TRUST_PROMPT",
       "status": "CLI_AND_WEB_SHORTCUT_READY_PROVIDER_ACCESS_GATE"
     },
     {

@@ -1,8 +1,8 @@
 # AI Tools checkpoint
 
-Status: `OWNER_ACTION_REQUIRED_META_AI_LOGIN_FIRST`
+Status: `IN_PROGRESS_CONTROLLED_LAUNCHER_VALIDATION`
 
-Updated: `2026-07-26T10:25:33.1748797+02:00`
+Updated: `2026-07-26T11:22:02.9132583+02:00`
 
 ## Objective
 
@@ -54,12 +54,28 @@ unattended system-level backdoors.
   `a5f60172e8dd907986af01206d8bfa3d6f8af744`, tree
   `2c7ae4874e8567ad11c8ab2c644e1e052760f245`, pushed to private `origin/main`
   with exact local/remote SHA parity.
+- A controlled launcher policy now limits the initial launch directory to
+  `C:\AI-Tools\workspaces`, keeps provider approval and trust prompts, disables
+  remote control and ambient Claude MCP, and refuses persistent permission
+  bypasses. This is not an OS filesystem sandbox; prompted shell tools may
+  still address absolute paths.
+- Local CLI entry points are pinned to their verified paths and SHA-256
+  digests. The launcher fails closed if an executable or wrapper drifts.
+- The read-only preflight confirms all six CLIs remain installed. It blocks
+  local-agent launch because UAC is disabled and the current process is
+  elevated. BitLocker `C:` protection off is separately reported as a warning.
+  Defender real-time protection and all firewall profiles remain enabled.
+- Existing Claude configuration contains
+  `skipDangerousModePermissionPrompt=true`. This does not activate
+  `bypassPermissions`, was not created or changed by this project, and is
+  recorded as a pre-existing warning-suppression risk.
 
 ## Current action
 
-All owner-independent installation, provenance, doctor, safe launcher,
-security-baseline, and local acceptance work is complete. The first provider
-in the required order is paused at Meta account sign-in.
+Controlled-launcher hardening is implemented and under final validation.
+Interactive provider acceptance remains paused at the first owner-only Meta
+sign-in gate. Local CLI sessions are additionally blocked until UAC is
+restored and Windows has restarted.
 
 ## Resume verification (2026-07-26 10:25 CEST)
 
@@ -82,12 +98,29 @@ in the required order is paused at Meta account sign-in.
   fallback did not execute the Meta shortcut. No browser, credential,
   security-policy, service, task, or provider state was changed.
 
+## Controlled-launcher verification (2026-07-26 11:11 CEST)
+
+- PowerShell parser PASS for all setup scripts.
+- JSON parsing PASS for all setup evidence and provider policy files.
+- Read-only preflight PASS and correctly reported
+  `UAC_DISABLED_REBOOT_REQUIRED_AFTER_REENABLE`,
+  `CURRENT_PROCESS_ELEVATED`, plus the
+  `BITLOCKER_C_PROTECTION_OFF` warning.
+- Negative gate tests PASS: a path outside the launch-directory allowlist, a
+  reparse-point launch path, and a local agent launch while UAC is disabled
+  all failed before any provider process started.
+- Git object integrity PASS; the pre-change repository state was clean and
+  local `main` matched remote `origin/main` at
+  `081401f8a117882ebcd51ab87c79cb842aa7c708`.
+
 ## Next safe action
 
-Open `Start` → `AI Tools` → `Meta AI`, complete the official Meta sign-in
-without sharing credentials in chat, then reply `Готово`. After that, verify
-Meta and continue once through Grok, Claude, Mistral, Gemini, DeepSeek, and
-Perplexity owner-only gates without repeating completed installs.
+Decide whether to restore UAC and BitLocker protection. UAC must be enabled
+and Windows restarted before any controlled local-agent session. Separately,
+open `Start` → `AI Tools` → `Meta AI` and complete the official Meta sign-in
+without sharing credentials. After those owner actions, run the preflight and
+continue once through the remaining provider gates without repeating
+completed installs.
 
 ## Owner-only gates
 
@@ -96,3 +129,7 @@ and any payment or billing action. Meta Model API is additionally blocked by
 the official US-developer preview region restriction. Gemini CLI requires an
 eligible Enterprise Code Assist or API-key route; DeepSeek and Perplexity API
 integrations require keys and potentially paid balance. No billing was enabled.
+
+Restoring UAC requires an owner-approved system change and reboot. Re-enabling
+BitLocker protection requires the owner to verify recovery-key availability
+first. Neither action was performed automatically.
