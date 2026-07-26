@@ -1,6 +1,6 @@
 # AI Tools verification
 
-Updated: `2026-07-26T11:25:55.4589607+02:00`
+Updated: `2026-07-26T12:09:12.6753764+02:00`
 
 | Tool | Official component | Version | Auth | Admin | FS/shell | Full-access mode | Test | Status/blocker |
 |---|---|---:|---|---|---|---|---|---|
@@ -51,6 +51,20 @@ workspace trust.
   status off.
 - Persistent permissive settings: none written.
 - Task-owned installer/provider processes: none remain.
+
+## Security preflight refresh (2026-07-26 12:09 CEST)
+
+- Pinned-command integrity: PASS for Copilot, Grok, Claude, Vibe, and Gemini.
+- GitHub identity: PASS as `Tarasevych`; repository object integrity and
+  local/origin/remote SHA parity: PASS.
+- Defender and all firewall profiles: PASS and enabled.
+- Local-agent launch: BLOCKED by pre-existing UAC disabled state and the
+  current elevated shell.
+- Warnings: BitLocker `C:` protection off and pre-existing Claude
+  dangerous-mode warning suppression.
+- Tracked secret-pattern scan: PASS, 24 files checked and zero findings.
+- Meta AI shortcut provenance: PASS; interactive login acceptance remains
+  `UNVERIFIED_OWNER_ACTION_REQUIRED`.
 
 ## Corrected, non-repeated errors
 

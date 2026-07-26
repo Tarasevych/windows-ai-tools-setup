@@ -2,7 +2,7 @@
 
 Status: `OWNER_ACTION_REQUIRED_UAC_AND_META_LOGIN`
 
-Updated: `2026-07-26T11:25:55.4589607+02:00`
+Updated: `2026-07-26T12:09:12.6753764+02:00`
 
 ## Objective
 
@@ -116,6 +116,34 @@ until UAC is restored and Windows has restarted.
   `ed2ad495a5b50c298b2edc32c363d6b28fe811a3` was pushed to private
   `Tarasevych/windows-ai-tools-setup`; local `main`, `origin/main`, and remote
   `refs/heads/main` matched exactly on readback.
+
+## Resume verification (2026-07-26 12:09 CEST)
+
+- Re-read this checkpoint and `AGENTS.md`; no completed installation,
+  authentication, acceptance test, or provider setup was repeated.
+- Re-verified the source masterprompt SHA-256 as
+  `937bf6115b1497f9ee7ecf89b5d48d0647e017ca40a26e895485024dcb7f1113`.
+- Live versions remain GitHub CLI `2.96.0`, Copilot CLI `1.0.75`, Grok Build
+  `0.2.112`, Claude Code `2.1.220`, Mistral Vibe `2.22.0`, and Gemini CLI
+  `0.52.0`. Official WinGet, npm, and PyPI metadata matched the installed
+  versions, except that Anthropic's native Claude updater remains newer than
+  the current WinGet manifest `2.1.218`.
+- The read-only security preflight passed the pinned-command SHA-256 check for
+  Copilot, Grok, Claude, Vibe, and Gemini. Local-agent launch remains blocked
+  by the unchanged `EnableLUA=0` state and the current elevated shell.
+- Defender real-time protection and all firewall profiles remain enabled.
+  BitLocker `C:` protection off and the pre-existing Claude dangerous-mode
+  warning suppression remain warnings; neither was changed.
+- GitHub API identity is still `Tarasevych`. `git fsck --full` passed, and
+  local `main`, `origin/main`, and remote `refs/heads/main` matched exactly at
+  `d015cdaa26d3d320cbdb609117e9dcf81be487db`.
+- A sanitized scan of all 24 tracked files found no common token-shaped secret
+  patterns.
+- The Meta AI shortcut still resolves only to the official
+  `https://www.meta.ai/` Chrome app-mode URL. One shortcut launch attempt
+  returned without an independently verifiable Meta window/process; browser
+  control was unavailable, so Meta authentication remains unverified and was
+  not retried.
 
 ## Next safe action
 
