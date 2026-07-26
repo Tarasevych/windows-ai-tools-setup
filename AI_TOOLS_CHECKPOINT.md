@@ -2,7 +2,7 @@
 
 Status: `OWNER_ACTION_REQUIRED_META_AI_LOGIN_FIRST`
 
-Updated: `2026-07-26T07:42:27.3906751+02:00`
+Updated: `2026-07-26T07:45:36.2264932+02:00`
 
 ## Objective
 
@@ -50,6 +50,10 @@ unattended system-level backdoors.
   written.
 - Post-install readback confirms Defender, firewall, UAC, and BitLocker
   baseline values are unchanged. No installer or provider process remains.
+- The verified installation/evidence phase is commit
+  `a5f60172e8dd907986af01206d8bfa3d6f8af744`, tree
+  `2c7ae4874e8567ad11c8ab2c644e1e052760f245`, pushed to private `origin/main`
+  with exact local/remote SHA parity.
 
 ## Current action
 
