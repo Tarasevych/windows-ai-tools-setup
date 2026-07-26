@@ -1,8 +1,8 @@
 # AI Tools checkpoint
 
-Status: `IN_PROGRESS_CONTROLLED_LAUNCHER_VALIDATION`
+Status: `OWNER_ACTION_REQUIRED_UAC_AND_META_LOGIN`
 
-Updated: `2026-07-26T11:22:02.9132583+02:00`
+Updated: `2026-07-26T11:25:55.4589607+02:00`
 
 ## Objective
 
@@ -72,10 +72,10 @@ unattended system-level backdoors.
 
 ## Current action
 
-Controlled-launcher hardening is implemented and under final validation.
-Interactive provider acceptance remains paused at the first owner-only Meta
-sign-in gate. Local CLI sessions are additionally blocked until UAC is
-restored and Windows has restarted.
+Controlled-launcher hardening, validation, commit, push, and remote readback
+are complete. Interactive provider acceptance remains paused at the first
+owner-only Meta sign-in gate. Local CLI sessions are additionally blocked
+until UAC is restored and Windows has restarted.
 
 ## Resume verification (2026-07-26 10:25 CEST)
 
@@ -112,6 +112,10 @@ restored and Windows has restarted.
 - Git object integrity PASS; the pre-change repository state was clean and
   local `main` matched remote `origin/main` at
   `081401f8a117882ebcd51ab87c79cb842aa7c708`.
+- Controlled-launcher implementation commit
+  `ed2ad495a5b50c298b2edc32c363d6b28fe811a3` was pushed to private
+  `Tarasevych/windows-ai-tools-setup`; local `main`, `origin/main`, and remote
+  `refs/heads/main` matched exactly on readback.
 
 ## Next safe action
 

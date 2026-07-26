@@ -1,6 +1,6 @@
 # AI Tools verification
 
-Updated: `2026-07-26T11:11:05.4018156+02:00`
+Updated: `2026-07-26T11:25:55.4589607+02:00`
 
 | Tool | Official component | Version | Auth | Admin | FS/shell | Full-access mode | Test | Status/blocker |
 |---|---|---:|---|---|---|---|---|---|
@@ -39,6 +39,8 @@ workspace trust.
 - Pre-existing Claude
   `skipDangerousModePermissionPrompt=true` is recorded but does not itself
   activate bypass mode.
+- Controlled-launcher implementation is preserved in private commit
+  `ed2ad495a5b50c298b2edc32c363d6b28fe811a3` with verified remote SHA parity.
 
 ## Security-control readback
 

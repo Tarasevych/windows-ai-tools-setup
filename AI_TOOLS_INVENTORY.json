@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-26T11:11:05.4018156+02:00",
+  "updated_at": "2026-07-26T11:25:55.4589607+02:00",
   "policy": {
     "official_sources_only": true,
     "secret_free_artifacts": true,
@@ -41,7 +41,7 @@
       "auth": "OWNER_DEVICE_OR_BROWSER_LOGIN_REQUIRED",
       "package_integrity": "sha512-dCXAiFHmn3JTOK+vPfCIzzum1GmxPB81NH73yYhqleXx1y/Ks3qjwJ+GeEXmB7eudiap98j9Nj1cDwH4lSuaOw==",
       "permission_mode": "CONTROLLED_LAUNCHER_DEFAULT_ASK_NO_MEMORY",
-      "status": "INSTALLED_DOCTOR_PASS_AUTH_REQUIRED"
+      "status": "INSTALLED_DOCTOR_PASS_AUTH_AND_UAC_REQUIRED"
     },
     {
       "id": "github-copilot-cli",
@@ -54,7 +54,7 @@
       "signature": "VALID_GITHUB_INC",
       "permission_mode": "CONTROLLED_LAUNCHER_DEFAULT_PROMPTS_NO_REMOTE_NO_ALLOW_ALL",
       "acceptance": "PASS_AUTH_AND_ISOLATED_FILE_READ_WRITE",
-      "status": "READY"
+      "status": "INSTALLED_AUTH_PASS_LOCAL_AGENT_UAC_GATE"
     },
     {
       "id": "claude",
@@ -78,7 +78,7 @@
       "permission_mode": "CONTROLLED_LAUNCHER_MANUAL_STRICT_EMPTY_MCP",
       "preexisting_skip_dangerous_mode_permission_prompt": true,
       "doctor": "PASS_NO_INSTALLATION_ISSUES",
-      "status": "INSTALLED_CURRENT_AUTH_REQUIRED"
+      "status": "INSTALLED_CURRENT_AUTH_AND_UAC_REQUIRED"
     },
     {
       "id": "mistral-vibe",
@@ -89,7 +89,7 @@
       "auth": "OWNER_BROWSER_OR_API_SETUP_REQUIRED",
       "sha256_uv_shim": "79dae80b3982d28ab9538fcfedbdbdd9078d1e1cb2c6f04a469dc4dd7bf5d33d",
       "permission_mode": "CONTROLLED_LAUNCHER_DEFAULT_AGENT_TRUST_PROMPT",
-      "status": "INSTALLED_AUTH_REQUIRED"
+      "status": "INSTALLED_AUTH_AND_UAC_REQUIRED"
     },
     {
       "id": "gemini-cli",
@@ -100,7 +100,7 @@
       "auth": "ENTERPRISE_CODE_ASSIST_OR_API_KEY_REQUIRED",
       "package_integrity": "sha512-/6FvfvlcsOJtn3NAgTp5/ca9xS6nmat4otQ+NEVoT6lovmI2N5jHxtBqGtjLUo+cvBfGgtR2WmkCPxxpHjr61Q==",
       "permission_mode": "CONTROLLED_LAUNCHER_DEFAULT_APPROVAL_TRUST_PROMPT",
-      "status": "CLI_AND_WEB_SHORTCUT_READY_PROVIDER_ACCESS_GATE"
+      "status": "CLI_AND_WEB_SHORTCUT_READY_PROVIDER_ACCESS_AND_UAC_GATE"
     },
     {
       "id": "deepseek",
