@@ -1,24 +1,29 @@
-# AI Tools Windows setup rules
+# Правила налаштування інструментів ШІ у Windows / Regels voor inrichting van AI-hulpmiddelen op Windows
 
-- Use only provider-owned documentation, repositories, signed installers, or
-  verified WinGet manifests.
-- Preserve a secret-free inventory, verification report, and recovery
-  checkpoint after every material phase.
-- Never record passwords, API keys, OAuth tokens, cookies, recovery codes,
-  private keys, credential-store contents, or private user data.
-- Do not disable Defender, firewall, BitLocker, UAC, audit controls, sandbox
-  boundaries, or approval controls as a persistent prerequisite.
-- Do not create persistent SYSTEM or TrustedInstaller launchers, unattended
-  auto-approve agents, credential access paths, or unrestricted destructive
-  control planes.
-- Use the least privilege that completes a concrete task. Elevation is allowed
-  only for a scoped installation or diagnostic action with a documented
-  rollback.
-- Stop only the affected provider flow for OAuth, MFA, CAPTCHA, passkey,
-  biometric, payment, or required secret entry; continue independent work.
-- Do not create spend, enable billing, or activate a subscription without a
-  separate exact owner decision.
-- Acceptance tests may touch only their provider-specific synthetic test
-  directory and processes created by that test.
-- Before resuming, read `AI_TOOLS_CHECKPOINT.md` and verify live state; do not
-  repeat successful installation or authentication.
+## Українська (`uk`)
+
+- Використовуйте винятково офіційну документацію постачальників, офіційні сховища коду, підписані програми встановлення або перевірені описи пакунків WinGet.
+- Зберігайте очищений від таємниць перелік складників, звіт про перевірку та контрольну точку відновлення після кожного суттєвого етапу.
+- Ніколи не записуйте паролі, ключі API, маркери доступу OAuth, файли сеансів, коди відновлення, закриті ключі, вміст сховищ облікових даних або приватні дані користувача.
+- Не вимикайте Захисник Windows (Defender), мережевий екран, BitLocker, контроль облікових записів (UAC), засоби журналювання подій, межі ізольованого середовища чи запити на підтвердження дій як постійну передумову роботи.
+- Не створюйте постійних запускачів із правами `SYSTEM` або `TrustedInstaller`, неконтрольованих агентів з автоматичним схваленням дій, обхідних шляхів доступу до облікових даних чи необмежених руйнівних контурів керування.
+- Застосовуйте найменші повноваження, достатні для виконання конкретного завдання. Підвищення прав дозволяється лише для чітко обмеженого встановлення або діагностичної дії із задокументованим поверненням стану.
+- Зупиняйте лише відповідний потік конкретного постачальника, якщо потрібні вхід через OAuth, кількаступеневе підтвердження (MFA), перевірка CAPTCHA, ключ входу, біометрична перевірка, оплата або введення таємного ключа; решту незалежної роботи продовжуйте.
+- Не створюйте витрат, не вмикайте тарифікацію і не активуйте передплату без окремого точного рішення власника.
+- Приймальні випробування можуть торкатися лише власного виділеного перевіркового каталогу відповідного постачальника та процесів, породжених цим самим випробуванням.
+- Перед відновленням роботи прочитайте [КОНТРОЛЬНА-ТОЧКА-ІНСТРУМЕНТІВ-ШІ.uk.md](КОНТРОЛЬНА-ТОЧКА-ІНСТРУМЕНТІВ-ШІ.uk.md) і перевірте поточний стан системи наживо; не повторюйте вже успішно виконане встановлення чи підтвердження особи.
+
+---
+
+## Nederlands (`nl`)
+
+- Gebruik uitsluitend door de aanbieder beheerde documentatie, opslagplaatsen, digitaal ondertekende installatieprogramma's of geverifieerde WinGet-pakketbeschrijvingen.
+- Bewaar na elke wezenlijke fase een geheimvrije onderdelenlijst, een verificatieverslag en een herstelcontrolepunt.
+- Leg nooit wachtwoorden, API-sleutels, OAuth-toegangsbewijzen, sessiegegevens, herstelcodes, privésleutels, inhoud van aanmeldkluizen of persoonlijke gebruikersgegevens vast.
+- Schakel Windows Defender, het netwerkfilter, BitLocker, gebruikersaccountbeheer (UAC), controlemaatregelen, grenzen van afgeschermde omgevingen of goedkeuringscontroles nooit uit als blijvende voorwaarde.
+- Maak geen blijvende startvoorzieningen onder `SYSTEM` of `TrustedInstaller`, onbeheerde agenten met automatische goedkeuring, toegangspaden naar aanmeldgegevens of onbeperkte vernietigende besturingslagen aan.
+- Gebruik het laagste machtigingsniveau waarmee een concrete taak kan worden voltooid. Verhoging van rechten is uitsluitend toegestaan voor een afgebakende installatie- of diagnosehandeling met een gedocumenteerde terugdraaiprocedure.
+- Onderbreek uitsluitend de betrokken aanbiedersstroom wanneer OAuth, meervoudige aanmeldcontrole (MFA), CAPTCHA, toegangssleutel, biometrie, betaling of verplichte geheiminvoer nodig is; zet onafhankelijk werk voort.
+- Veroorzaak geen kosten, schakel geen facturering in en activeer geen abonnement zonder een afzonderlijk, uitdrukkelijk besluit van de eigenaar.
+- Aanvaardingstests mogen uitsluitend hun aanbiederspecifieke gesimuleerde testmap en de door die test gestarte processen aanspreken.
+- Lees vóór hervatting [CONTROLEPUNT-AI-HULPMIDDELEN.nl.md](CONTROLEPUNT-AI-HULPMIDDELEN.nl.md) en controleer de actuele systeemstatus; herhaal geen reeds geslaagde installatie of aanmelding.

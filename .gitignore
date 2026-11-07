@@ -1,4 +1,4 @@
-# Secrets and credentials
+# Таємниці та облікові дані / Geheimen en aanmeldgegevens
 .env
 .env.*
 *.key
@@ -9,12 +9,16 @@
 *token*
 *secret*
 
-# Runtime and package artifacts
+# Тимчасові дані виконання та пакунків / Uitvoerings- en pakketgegevens
 logs/*
 !logs/README.md
+!logs/ОГЛЯД.uk.md
+!logs/LEESMIJ.nl.md
 setup/tests/*/
 workspaces/*
 !workspaces/README.md
+!workspaces/ОГЛЯД.uk.md
+!workspaces/LEESMIJ.nl.md
 node_modules/
 __pycache__/
 *.pyc
@@ -22,7 +26,7 @@ __pycache__/
 dist/
 build/
 
-# Editor and OS noise
+# Службові файли редакторів та операційної системи / Hulpmiddel- en besturingssysteembestanden
 .vscode/
 .idea/
 Thumbs.db
